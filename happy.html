@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="Assets/Images/headphone-line.png" type="image/x-icon">
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--Swiper Css-->
+    <link rel="stylesheet" href="Assets/CSS/swiper-bundle.min.css">
+    <!--Bootstrap Css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <!--other Css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--CSS -->
+    <link rel="stylesheet" href="Assets/CSS/pages.css">
+    <title>Emosify</title>
+</head>
+
+<body>
+    <header>
+        <!--mac  Dots -->
+        <div class="iso">
+            <h6></h6>
+            <h6></h6>
+            <h6></h6>
+        </div>
+        <!--Nav Start-->
+        <nav>
+            <h2 class="logo">
+                <lord-icon src="https://cdn.lordicon.com/ryodbtwr.json" trigger="loop" delay="2"
+                    style="width:32px;height:32px">
+                </lord-icon>
+                Emosify
+            </h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Mood & Genres</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <!--Dark Theme-->
+            <div class="dark_mode">
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+            </div>
+        </nav>
+
+        <!--Section Start-->
+        <section>
+            <div class="cont_box">
+                <img src="Assets/Images/Happy Card.jpg" alt="">
+                <div class="btns" >
+                    <a href="#">Play All</a>
+                </div>
+            </div>
+            <div class="top_songs">
+                <p>Top Happy Songs</p>
+                <h6>Playlist created by Emosify</h6>
+                <h5>10 Tracks</h5>
+            </div>
+        </section>
+
+        <div class="master_play track_image">
+            <h2>Now Playing</h2>
+            <img src="Assets/Covers/Happy/1.webp" alt="">
+            <h5 id="title">Vibe<br>
+                <div class="subtitle" id="artist">Diljit Dosanjh</div>
+            </h5>
+            <div class="icon">
+                <i onclick="previous_song()" id="pre" class="bi bi-skip-start-fill" aria-hidden="true"></i>
+                <i onclick="justplay()" id="play" class="bi bi-play-fill" aria-hidden="true" ></i>
+                <i onclick="next_song()" id="next" class="bi bi-skip-end-fill" aria-hidden="true" ></i>
+            </div>
+
+            <!--- song duration part --->
+            <div class="duration">
+                <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
+            </div>
+        </div>
+
+        <div class="song_list">
+            <a href=""> <img src="Assets/Covers/Happy/1.webp"></a> 
+            <h3>Vibe</h3> 
+            <h4>Diljit Dosanjh</h4>
+            <h2>3:04</h2> 
+        </div>
+
+        <div class="song_list">
+            <a href=""> <img src="Assets/Covers/Happy/2.jpg"></a> 
+            <h3>Galan Goodiyan</h3> 
+            <h4>Manish Kumar</h4>
+            <h2>5:56</h2> 
+        </div>
+
+        <div class="song_list">
+            <a href=""> <img src="Assets/Covers/Happy/3.jpg"></a> 
+            <h3>Khara Khara</h3> 
+            <h4>Sukbir</h4>
+            <h2>3:15</h2> 
+        </div>
+
+        <div class="song_list">
+            <a href=""> <img src="Assets/Covers/Happy/4.jpg"></a> 
+            <h3>Harleys In Hawai</h3> 
+            <h4>Katty Perry</h4>
+            <h2>2:43</h2> 
+        </div>
+
+        <div class="song_list">
+            <a href=""> <img src="Assets/Covers/Happy/5.jpg"></a> 
+            <h3>Sift</h3> 
+            <h4>Bhalwaan</h4>
+            <h2>3:56</h2> 
+        </div>
+
+        <div class="song_list">
+            <a href=""> <img src="Assets/Covers/Happy/6.jpg"></a> 
+            <h3>Spaceship</h3> 
+            <h4>Ap Dhillon</h4>
+            <h2>2:20</h2> 
+        </div>
+
+        <div class="song_list">
+            <a href=""> <img src="Assets/Covers/Happy/7.jpg"></a> 
+            <h3>Party Tonight</h3> 
+            <h4>Pritam</h4>
+            <h2>3:43</h2> 
+        </div>
+
+        <div class="song_list">
+            <a href=""> <img src="Assets/Covers/Happy/8.jpg"></a> 
+            <h3>Pasoori</h3> 
+            <h4>Ali Seth</h4>
+            <h2>3:26</h2> 
+        </div>
+
+        <div class="song_list">
+            <a href=""> <img src="Assets/Covers/Happy/9.jpg"></a> 
+            <h3>Tera Hua</h3> 
+            <h4>Arijit Singh</h4>
+            <h2>3:17</h2> 
+        </div>
+
+        <div class="song_list">
+            <a href=""> <img src="Assets/Covers/Happy/10.jpg"></a> 
+            <h3>Balam Pichkari</h3> 
+            <h4>Vishal Dadhlani</h4>
+            <h2>5:03</h2> 
+        </div>
+    </header>
+    <!--Lordicon Javascript -->
+    <script src=" https://cdn.lordicon.com/lusqsztk.js"></script>
+                <!--Swiper Javascript -->
+                <script src="Assets/JS/swiper-bundle.min.js"></script>
+                <!--=============== MAIN JS ===============-->
+                <script src="Assets/JS/app.js"></script>
+                <script src="Assets/JS/happy.js"></script>
+</body>
+</html>

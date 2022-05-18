@@ -1,0 +1,253 @@
+/* Google Font 'Ubuntu Mono*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+/* Google Font 'Poppins' Sans serif*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+/* main theme */
+:root{
+    --primary-color: #dfd9d9;
+    --outline-color: rgb(255, 255, 255);
+    --secondary-color: #ebe7ed;
+    --text-color: #000; 
+}
+/* Dark theme*/
+.dark-theme{
+    --primary-color: #1f0d50;
+    --outline-color: rgb(24, 21, 21);
+    --secondary-color: #31266e;
+    --text-color: rgb(255, 255, 255);
+}
+body{
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+background: var(--primary-color);
+}
+header{
+    position: relative;
+    width: 80%;
+    height: 750px;
+    border: 1px solid var(--outline-color);
+    margin: 30px auto 0px auto;
+    border-radius: 20px 20px 0px 0px;
+    background: var(--secondary-color);
+}
+/* Mac dots*/
+header .iso{
+    position: absolute;
+    display: flex;
+    top: 15px;
+    left: 15px;
+}
+header .iso h6{
+width: 10px;
+height: 10px;
+background: #c77239;
+margin-left: 5px;
+border-radius: 50%;
+}
+header .iso h6:nth-child(2){
+    background: #f4f800 ;
+}
+header .iso h6:nth-child(3){
+    background: #009df8 ;
+}
+/* Navigation box*/
+header nav{
+width: 80%;
+height: 40px;
+/* border: 1px solid #000; */
+margin: 30px auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+/* emosify logo*/
+header nav .logo{
+   font-family:sans-serif monospace;
+   color: var(--text-color);
+}
+/* Home trending etc*/
+header nav ul{
+    display: flex;
+    align-items: center;
+}
+header nav ul li{
+    list-style: none;
+    padding: 5px 10px;
+}
+header nav ul li a{
+   text-decoration: none;
+   font-size: 15px;
+   color: rgb(0, 0, 0);
+   transition: .3s ease-in-out;
+}
+header nav ul li:nth-child(1) a{
+    color: rgb(240, 17, 17);
+ }
+ header nav ul li:nth-child(2) a{
+    color: rgb(17, 39, 240);
+ }
+ header nav ul li:nth-child(3) a{
+    color: rgb(6, 161, 27);
+ }
+ header nav ul li:nth-child(4) a{
+    color: rgb(140, 17, 240);
+ }
+ header nav ul li a:hover{
+    color: #000;
+}
+/* dark mode button */
+header nav .dark_mode{
+    display: inline-flex;
+    align-items: center;
+}
+header nav .dark_mode i{
+    position: relative;
+    text-decoration: none;
+    left: 90px; /*Important */
+    color: #000000;
+    margin-left: 15px;
+    transition: .3s linear;
+    overflow: hidden;
+    width: 23px;
+    height: 20px;
+}
+header nav .dark_mode i:hover{
+    color: #0003b9;
+}
+/* Main box (heart , text)*/
+header section{
+    width: 75%;
+    height: 350px;
+   /* border: 0.5px solid #000;*/
+    margin: auto;
+    display: flex;
+}
+header section .cont_box, .img_box{
+    position: relative;
+    width: 45%;
+    height: 100%;
+    
+   /* border: 1px solid #000;*/
+}
+header section .img_box{
+    width: 55%;
+}
+header section .cont_box h2 {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 45px;
+    font-weight: 700;
+    margin-top: 10px;
+    word-spacing: -10px;
+    color: var(--text-color);
+}
+/* Explore button*/
+header section .cont_box .btns {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+header section .cont_box .btns a {
+   position:relative;
+   padding: 11px 20px;
+   background:rgb(12, 165, 157);
+   text-decoration: none;
+   color: #ebe7ed;
+   font-size: 20px;
+   border-radius: 15px;
+   margin-right: 10px;
+   transition: .3s linear;
+   overflow: hidden;
+   background-image: linear-gradient(120deg, #7630e6,#b425db);
+   animation:gradient 10s linear infinite;
+}
+header section .cont_box .btns a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    z-index: -1;
+    top: 15px;
+    left: 0;
+    filter: blur(50px);
+    opacity: 0.9;
+}
+@keyframes gradient {
+    from{
+        filter: hue-rotate(0deg);
+    }
+    to{
+        filter: hue-rotate(360deg);
+    }
+} 
+/* Music cards box*/
+header section .img_box .main_music{
+    position:relative;
+    right: 40px;
+    top: -80px;
+
+}
+/* music cards*/
+header .music_card{
+    position: relative;
+    width: 90%;
+    height: 290px;
+  /*  border: 1px solid #000; */
+    margin: auto;
+}
+header .music_card .card_box{
+    width: 92%;
+    height: 290px;
+   /*border: 1px solid #000; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+header .music_card .card_box::-webkit-scrollbar{
+display: none;
+}
+header .music_card .card_box .card{
+    position: relative;
+   min-width: 192px;
+   height: 192px;
+  /* border: 1px solid rgb(10, 6, 6); */
+   border-radius: 15px;
+   background: linear-gradient(145deg, var(--secondary-color), var(--secondary-color));
+   box-shadow: 20px 20px 60px var(--secondary-color), -20px -20px 60px var(--secondary-color);
+   margin-right:20px;
+   cursor: pointer;
+}
+header .music_card .card_box .card .card_main_img{
+    position: absolute;
+    width: 190px;
+    right: auto;
+    border-radius: 15px;
+    transition: .4s linear;
+}
+header .music_card .card_box .card:hover .card_main_img{
+    transform:rotate(-3deg)
+}
+/* header .music_card .card_box .card .card_c{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: #000;
+    border-radius: 10px 10px 30px 10px;
+    top: -15px;
+    right: -10px;
+}*/
+header .music_card .card_box .card .content{
+    margin-top: 190px;
+    padding-left: 50px;
+}
+header .content a{
+    color: #000;
+    text-decoration: none;
+}
