@@ -1,6 +1,4 @@
-﻿# Project-Emotion
 # Project Emotion 🎭
-
 ![Project Logo](https://img.shields.io/badge/Project%20Emotion-%F0%9F%98%8A-blue)
 
 ---
