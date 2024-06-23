@@ -7,7 +7,9 @@
 
 Project Emotion is an interactive web application that leverages cutting-edge web technologies to create a captivating user experience. The project employs HTML, CSS, and JavaScript for the front end, and JavaScript along with Python for backend processing.
 
-<iframe src="https://giphy.com/embed/TlxaoEoAfBtZqpaYbZ" width="480" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/happy-art-illustration-TlxaoEoAfBtZqpaYbZ">via GIPHY</a></p>
+![App Demo](https://media.giphy.com/media/TlxaoEoAfBtZqpaYbZ/giphy.gif)
+
+
 ### Key Features
 
 - **Animated Icons:** 🎉 Beautiful animations using [lord-icon](https://lordicon.com/).
