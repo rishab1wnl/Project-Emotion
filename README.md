@@ -60,4 +60,4 @@ The application is also hosted online and can be accessed at:
 
 ---
 
-Made with ❤️ by [rishab1wnl](https://github.com/rishab1wnl)
+ > *This project was developed with ❤️ and ☕ by [rishab1wnl](https://github.com/rishab1wnl) *
