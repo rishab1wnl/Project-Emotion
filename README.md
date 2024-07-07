@@ -1,8 +1,5 @@
 # Project Emotion 🎭
-![Project Logo](https://img.shields.io/badge/Project%20Emotion-%F0%9F%98%8A-blue)
-
----
-
+![Project-emotion](https://img.shields.io/badge/Project--emotion-Blue?style=for-the-badge)
 ## Overview
 
 Project Emotion is an interactive web application that leverages cutting-edge web technologies to create a captivating user experience. The project employs HTML, CSS, and JavaScript for the front end, and JavaScript along with Python for backend processing.
